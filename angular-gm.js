@@ -321,19 +321,6 @@
       var hasBounds = false;
       var hasMapTypeId = false;
 
-      if (attrs.hasOwnProperty('gmCenter')) {
-        hasCenter = true;
-      }
-      if (attrs.hasOwnProperty('gmZoom')) {
-        hasZoom = true;
-      }
-      if (attrs.hasOwnProperty('gmBounds')) {
-        hasBounds = true;
-      }
-      if (attrs.hasOwnProperty('gmMapTypeId')) {
-        hasMapTypeId = true;
-      }
-
       var _updateScope = function() {
         $timeout(function () {
           if (hasCenter || hasZoom || hasBounds || hasMapTypeId) {
